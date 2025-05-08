@@ -1,0 +1,194 @@
+body,
+html {
+  margin: 0;
+  font-family: sans-serif;
+  color: #000;
+}
+
+/* Layout */
+.app {
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2d3748;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-title {
+    margin-bottom: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.hero-overlay h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hero-overlay p {
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .hero-overlay h2 {
+    font-size: 3rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1.25rem;
+  }
+}
+
+/* Sections */
+.section {
+  background-color: #ffe4e6;
+  margin: 3rem 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.section p {
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .section h2 {
+    font-size: 1.875rem;
+  }
+
+  .section p {
+    font-size: 1rem;
+  }
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Projects */
+.projects h2 {
+  margin-bottom: 1.5rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.project-grid img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Contact */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+a {
+  color: inherit;
+}
+
+/* Footer */
+.footer {
+  background-color: #2d3748;
+  color: white;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
